@@ -6,3 +6,4 @@ uncommitted/
 warehouse.db
 .coverage
 .idea/*
+.idea/
