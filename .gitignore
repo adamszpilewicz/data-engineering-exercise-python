@@ -5,3 +5,4 @@ __pycache__/
 uncommitted/
 warehouse.db
 .coverage
+.idea/*
