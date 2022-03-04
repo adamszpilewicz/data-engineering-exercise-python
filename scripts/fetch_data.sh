@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-OUTPUT_DIR=uncommitted
+OUTPUT_DIR="./db/raw"
 mkdir -p ${OUTPUT_DIR}
 
 OUTPUT_PATH=${OUTPUT_DIR}/dataset.tar.gz

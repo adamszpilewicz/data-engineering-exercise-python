@@ -1,8 +1,11 @@
 import json
+from db import DB
 
-# The following code is purely illustrative
-try:
-    with open('uncommitted/Posts.json', 'r') as posts_in:
-        print(json.load(posts_in)[0])
-except FileNotFoundError:
-    print("Please download the dataset using 'pipenv run fetch_data'")
+
+config = {"db_path": "../db/db_posts_votes.sqlite"}
+
+
+if __name__ == "__main__":
+
+    db = DB(db_path=config["db_path"])
+    db.create_or_refresh()

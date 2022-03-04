@@ -4,6 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+sqlalchemy = "*"
+pandas = "*"
 
 [dev-packages]
 rope = "*"
@@ -14,9 +16,10 @@ isort = "*"
 flake8 = "*"
 pytest-cov = "*"
 autopep8 = "*"
+v = {editable = true,version = "*"}
 
 [requires]
-python_version = "3.8"
+python_version = "3.9"
 
 [scripts]
 tidy = "scripts/tidy.sh"
