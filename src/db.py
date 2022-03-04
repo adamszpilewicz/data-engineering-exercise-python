@@ -21,7 +21,6 @@ class DB:
                 f"SELECT DISTINCT(Id) FROM {table_name};"
             ).fetchall()
         except OperationalError:
-            logging.info(f"table {table_name} created in db")
             return []
 
         keys_list = []
